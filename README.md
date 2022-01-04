@@ -1,6 +1,7 @@
-# Installation of Raspberry Pi 4 - 64 bit.
+# Installation of Raspberry Pi 4 - 64 bit - Server
 
-We want a 64 bit OS to obtain speed from the RPI 4 hardware.
+We want a 64 bit OS to obtain speed from the RPI 4 hardware.\
+We also want a desktop/GUI version, to utilize GUI if necessary (yes, it will carry additional load/storage).\
 We do not want WIFI enabled at first.
 
 1. Download the right image from [Raspberry downloads](https://downloads.raspberrypi.org/raspios_arm64)
@@ -15,10 +16,26 @@ We do not want WIFI enabled at first.
    - Enabled `Skip first run wizard`.
    - Disable `Enable telemetry`.
 6. Enter SD Card into RPI 4.
-7. Boot the device on the network and set fixed IP to the device.
-8. Login through SSH (X11?) with Putty and user 'pi', and the password set above, utilize XXX to get remote desktop.
-9. XXX
-10. XXX
-
-
-sudo raspi-config
+7. Boot the device on the network, wait 10 minutes (how long time is really needed?).
+8. From the router, set fixed IP on the server.
+9. Login through SSH with Putty and user 'pi', and the password set above.
+   - Update config with: `sudo raspi-config`.
+     - Set the following config:
+       - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
+       - `Advanced Options` -> `Boot Order` to 'USB Boot' (Boot from USB if available, otherwise boot from SD Card).
+     - Save and leave program without reboot.
+   - Run `sudo raspi-config`
+11. Update RPI and reboot with:
+    ```shell
+    sudo apt update
+    sudo apt full-upgrade
+    sudo shutdown -r now
+    ```
+13. After reboot, login with ssh and verify that bootloader is updated with:
+    ```shell
+    sudo rpi-eeprom-update
+    ```
+15. Install xrdp to easily get remote desktop with:
+    ```shell
+    sudo apt-get install xrdp
+    ```
