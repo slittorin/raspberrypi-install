@@ -19,24 +19,24 @@ We do not want WIFI enabled as we will utilize fixed cabling.
 7. Boot the device on the network, wait 10 minutes (how long time is really needed?).
 8. From the router, set fixed IP on the server.
    - Possibly a new reboot is required.
-10. Login through SSH with Putty and user 'pi', and the password set above.
+9. Login through SSH with Putty and user 'pi', and the password set above.
    - Update config with: `sudo raspi-config`
      - Set the following config:
        - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
        - `Advanced Options` -> `Boot Order` to 'USB Boot' (Boot from USB if available, otherwise boot from SD Card).
      - Save and leave program without reboot.
    - Run `sudo raspi-config`
-11. Update RPI and reboot with:
+10. Update RPI and reboot with:
     ```shell
     sudo apt update
     sudo apt full-upgrade
     sudo shutdown -r now
     ```
-13. After reboot, login with ssh and verify that bootloader is updated with:
+11. After reboot, login with ssh and verify that bootloader is updated with:
     ```shell
     sudo rpi-eeprom-update
     ```
-15. Install xrdp to easily get remote desktop with:
+12. Install xrdp to easily get remote desktop with:
     ```shell
     sudo apt-get install xrdp
     ```
