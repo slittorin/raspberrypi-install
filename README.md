@@ -18,7 +18,8 @@ We do not want WIFI enabled as we will utilize fixed cabling.
 6. Enter SD Card into RPI 4.
 7. Boot the device on the network, wait 10 minutes (how long time is really needed?).
 8. From the router, set fixed IP on the server.
-9. Login through SSH with Putty and user 'pi', and the password set above.
+   - Possibly a new reboot is required.
+10. Login through SSH with Putty and user 'pi', and the password set above.
    - Update config with: `sudo raspi-config`.
      - Set the following config:
        - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
