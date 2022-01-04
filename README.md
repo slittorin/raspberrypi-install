@@ -40,3 +40,7 @@ We do not want WIFI enabled as we will utilize fixed cabling.
     ```shell
     sudo apt-get install xrdp
     ```
+    Then as derived from [Linuxize-com](https://linuxize.com/post/how-to-install-xrdp-on-raspberry-pi/)
+    ```shell
+    sudo adduser xrdp ssl-cert
+    ```
