@@ -24,6 +24,7 @@ We do not want WIFI enabled as we will utilize fixed cabling.
      - Set the following config:
        - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
        - `Advanced Options` -> `Boot Order` to 'USB Boot' (Boot from USB if available, otherwise boot from SD Card).
+         - As we may want to boot from SSD disk later.
      - Save and leave program without reboot.
    - Run `sudo raspi-config`
 10. Update RPI and reboot with:
