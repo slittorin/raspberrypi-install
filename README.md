@@ -8,12 +8,13 @@ We do not want WIFI enabled at first.
 3. Download and run [Raspberry PI Imager](https://www.raspberrypi.com/software/)
 4. Choose the downloaded image and the SD-Card.
 5. Open advanced options with CTRL + SHIFT + X:
-   - Tick `Set hostname` and set name of the server.
-   - Tick `Enabled SSH` and set a password for user 'pi'.
+   - Enable `Set hostname` and set name of the server.
+   - Enable `Enabled SSH` and set a password for user 'pi'.
    - Set `Locale settings` and time zone to 'Europe/Stockholm'.
    - Leave `Keyboard layout` as 'us'.
-   - Tick checkbox before `Skip first run wizard`.
-6. 
+   - Enabled `Skip first run wizard`.
+   - Disable `Enable telemetry`.
+6. xxx
 
 
 sudo raspi-config
