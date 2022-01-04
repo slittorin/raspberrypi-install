@@ -20,7 +20,7 @@ We do not want WIFI enabled as we will utilize fixed cabling.
 8. From the router, set fixed IP on the server.
    - Possibly a new reboot is required.
 10. Login through SSH with Putty and user 'pi', and the password set above.
-   - Update config with: `sudo raspi-config`.
+   - Update config with: `sudo raspi-config`
      - Set the following config:
        - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
        - `Advanced Options` -> `Boot Order` to 'USB Boot' (Boot from USB if available, otherwise boot from SD Card).
