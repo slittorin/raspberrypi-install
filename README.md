@@ -1,7 +1,7 @@
 # Installation of Raspberry Pi 4 - 64 bit - Server
 
--We want a 64 bit OS to obtain speed from the RPI 4 hardware.\
--We also want a desktop/GUI version, to utilize GUI if necessary (yes, it will carry additional load/storage).\
+- We want a 64 bit OS to obtain speed from the RPI 4 hardware.\
+- We also want a desktop/GUI version, to utilize GUI if necessary (yes, it will carry additional load/storage).\
 - We do not want WIFI enabled as we will utilize fixed cabling.
 - Preferably, use a RPI 4 with 8GB RAM.
 
