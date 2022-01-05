@@ -50,3 +50,9 @@
     - To get network tools, install dns-utils with `sudo apt install dnsutils`.
 
 ## Install docker
+
+1. Login and run the the following commands:
+   - `sudo apt install docker`.
+   - `sudo apt install docker-compose`.
+2. Create the directory `/srv` if not already created.
+   - Utilize `/srv` as directory to mount volumes in docker.
