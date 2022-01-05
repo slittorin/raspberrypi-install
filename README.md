@@ -9,7 +9,7 @@
 
 ## Installation.
 
-1. Download the right image from [Raspberry downloads](https://downloads.raspberrypi.org/raspios_arm64)
+1. Download the right 64 bit image from [Raspberry downloads](https://downloads.raspberrypi.org/raspios_arm64)
 2. Format SD Card. Can be done with [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter/)
 3. Download and run [Raspberry PI Imager](https://www.raspberrypi.com/software/)
 4. Choose the downloaded image and the SD-Card.
@@ -20,7 +20,7 @@
    - Leave `Keyboard layout` as 'us'.
    - Enabled `Skip first run wizard`.
    - Disable `Enable telemetry`.
-6. Enter SD Card into RPI 4.
+6. Enter SD Card into RPI.
 7. Boot the device on the network, wait 10 minutes (how long time is really needed?).
 8. From the router, set fixed IP on the server.
    - Possibly a new reboot is required.
