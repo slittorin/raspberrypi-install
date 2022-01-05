@@ -24,7 +24,7 @@ We do not want WIFI enabled as we will utilize fixed cabling.
      - Set the following config:
        - `System Options` -> `Boot/Auto Login` to 'Desktop'.
        - `Display Options` -> `VNC Resolution` to '1280x720'.
-       - `Interface Options` -> `VNC` to E   nabled-Yes.
+       - `Interface Options` -> `VNC` to Enabled-Yes.
        - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
        - `Advanced Options` -> `Boot Order` to 'USB Boot' (Boot from USB if available, otherwise boot from SD Card).
          - As we may want to boot from SSD disk later.
