@@ -1,9 +1,13 @@
 # Installation of Raspberry Pi 4 - 64 bit - Server
 
-- We want a 64 bit OS to obtain speed from the RPI 4 hardware.\
-- We also want a desktop/GUI version, to utilize GUI if necessary (yes, it will carry additional load/storage).\
+## Prequisities:
+
+- We want a 64 bit OS to obtain speed from the RPI 4 hardware.
+- We also want a desktop/GUI version, to utilize GUI if necessary (yes, it will carry additional load/storage).
 - We do not want WIFI enabled as we will utilize fixed cabling.
 - Preferably, use a RPI 4 with 8GB RAM.
+
+## Installation.
 
 1. Download the right image from [Raspberry downloads](https://downloads.raspberrypi.org/raspios_arm64)
 2. Format SD Card. Can be done with [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter/)
@@ -44,3 +48,5 @@
     - Disable Bluetooth by clicking the bluetooth-symbol at the upper right corner.
 13. Fine tune the installation with.
     - To get network tools, install dns-utils with `sudo apt install dnsutils`.
+
+## Install docker
