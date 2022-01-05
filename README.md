@@ -42,4 +42,4 @@ We do not want WIFI enabled as we will utilize fixed cabling.
 12. Login with VNC to continue config:
     - Disable Bluetooth by clicking the bluetooth-symbol at the upper right corner.
 13. Fine tune the installation with.
-    - To get network tools, install dns-utils with `sudo apt install dnsutils`
+    - To get network tools, install dns-utils with `sudo apt install dnsutils`.
