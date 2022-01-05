@@ -1,13 +1,13 @@
 # Installation of Raspberry Pi 4 - 64 bit - Server
 
-## Prequisities:
+## Prequisities
 
 - We want a 64 bit OS to obtain speed from the RPI 4 hardware.
 - We also want a desktop/GUI version, to utilize GUI if necessary (yes, it will carry additional load/storage).
 - We do not want WIFI enabled as we will utilize fixed cabling.
 - Preferably, use a RPI 4 with 8GB RAM.
 
-## Installation.
+## Installation
 
 1. Download the right 64 bit image from [Raspberry downloads](https://downloads.raspberrypi.org/raspios_arm64)
 2. Format SD Card. Can be done with [SD Memory Card Formatter](https://www.sdcard.org/downloads/formatter/)
