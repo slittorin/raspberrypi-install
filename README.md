@@ -22,6 +22,9 @@ We do not want WIFI enabled as we will utilize fixed cabling.
 9. Login through SSH with Putty and user 'pi', and the password set above.
    - Update config with: `sudo raspi-config`.
      - Set the following config:
+       - `System Options` -> `Boot/Auto Login` to 'Desktop'.
+       - `Display Options` -> `VNC Resolution` to '1280x720'.
+       - `Interface Options` -> `VNC` to E   nabled-Yes.
        - `Localisation Options` -> `Locale` to 'en_GB.UTG-8 UTF 8' (if not already set).
        - `Advanced Options` -> `Boot Order` to 'USB Boot' (Boot from USB if available, otherwise boot from SD Card).
          - As we may want to boot from SSD disk later.
@@ -36,11 +39,5 @@ We do not want WIFI enabled as we will utilize fixed cabling.
     ```shell
     sudo rpi-eeprom-update
     ```
-12. Install xrdp to easily get remote desktop with:
-    ```shell
-    sudo apt-get install xrdp
-    ```
-    Then as derived from [Linuxize-com](https://linuxize.com/post/how-to-install-xrdp-on-raspberry-pi/)
-    ```shell
-    sudo adduser xrdp ssl-cert
-    ```
+12. Login with VNC to continue config:
+    - Disable Bluetooth by clicking the bluetooth-symbol at the upper right corner.
