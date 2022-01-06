@@ -48,6 +48,7 @@
     - Disable Bluetooth by clicking the bluetooth-symbol at the upper right corner.
 13. Fine tune the installation with.
     - To get network tools, install dns-utils with `sudo apt install dnsutils`.
+    - To get telnet-client (not the daemon), install with `sudo apt install telnet`.
 
 ## Install docker
 
