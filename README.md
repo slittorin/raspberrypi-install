@@ -55,5 +55,6 @@
 1. Login and run the the following commands:
    - `sudo apt install docker`.
    - `sudo apt install docker-compose`.
+   - `sudo usermod -aG docker pi`.
 2. Create the directory `/srv` if not already created.
    - Utilize `/srv` as directory to mount volumes in docker.
