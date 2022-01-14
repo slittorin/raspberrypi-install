@@ -57,5 +57,6 @@
    - `sudo apt install docker`.
    - `sudo apt install docker-compose`.
    - `sudo usermod -aG docker pi`.
+   - `sudo systemctl enable docker` (to ensure that the docker service is enabled to start at boot).
 2. Create the directory `/srv` if not already created.
    - Utilize `/srv` as directory to mount volumes in docker.
