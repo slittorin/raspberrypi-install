@@ -44,6 +44,7 @@
     ```shell
     sudo rpi-eeprom-update
     ```
+    If not correct, update with `sudo raspi-config` and `Advanced options` -> `Bootloader version` -> `Latest` -> `Yes`. Reboot thereafter and run `sudo rpi-eeprom-update` again to verify.
 12. Login with VNC to continue config:
     - Disable Bluetooth by clicking the bluetooth-symbol at the upper right corner.
 13. Fine tune the installation with.
